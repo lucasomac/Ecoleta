@@ -1,0 +1,53 @@
+// Rota: Endereço completo da requição
+// Recurso: Qual entidade estamos acessando do sistema
+
+// GET: Buscar uma ou mais informações no back-end
+// POST: Criar uma nova informação no back-end
+// PUT: Atualizar uma informação existente no back-end 
+// DELETE: Remover uma informação do back-end
+
+// POST http://localhost:3333/users = Cria um usuário
+// GET http://localhost:3333/users = Listar usuários
+// GET http://localhost:3333/users/5 = Buscar dados do usuário com ID 5
+
+// Request Param: Parâmetros que vem na própria rota que identificam um recurso
+// Query Param: Parâmetros que vem na propria rota geralmente opcionais para filtros, paginação
+// Body: Parâmetros para criação e atualização de informações
+
+
+/**
+ *Tipos de parâmetros:
+ *
+ * Query Params: Parâmetros nomeados enviados na rota após "?" (Filtros, paginação) --> request.query
+ * Route Params: Parâmentros utilizados para identificar recursos EX: /users/:1 --> request.params
+ * Request Body: Corpo da requisição, utlizado para criar ou alterar recursos --> request.body
+ **/
+
+
+//Tabelas
+    -points(pontos de coleta)
+        -image
+        -name
+        -email
+        -whatsapp
+        -latitude
+        -longitude
+        -city
+        -uf
+    -items(items para coleta)
+        -title
+        -image
+    -point_items(items que o ponto de coleta pode coletar)
+        -point_id
+        -item_id
+
+Migrations = Histórico do banco de dados
+
+
+// Funcionalidades
+
+    -Cadastro de ponto de coleta
+    -Lista os itens de coleta
+    -Listar pontos (filtro de estado/cidades/items)
+    -Listar um ponto de coleta especifico
+    
