@@ -14,7 +14,7 @@ server/build
 #database
 *.sqlite
 
-server/yarn.lock
+*/yarn.lock
 server/src/.env
 
 yarn-debug.log*
