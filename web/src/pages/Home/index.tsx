@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.svg';
 import './styles.css';
-import { FiLogin } from 'react-icons/fi';
+import { FiLogIn } from 'react-icons/fi';
 
 const Home = () => {
     return (
