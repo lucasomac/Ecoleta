@@ -1,0 +1,5 @@
+server/node_modules/
+web/node_modules
+*.sqlite
+server/yarn-error.log
+server/yarn.lock
