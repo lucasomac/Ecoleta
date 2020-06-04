@@ -1,6 +1,25 @@
+# dependencies
 server/node_modules/
 web/node_modules/
+*.pnp
+*.pnp.js
+
+# production
+web/build
+server/build
+
+
 *.sqlite
-server/yarn-error.log
+
 server/yarn.lock
 server/src/.env
+
+yarn-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
