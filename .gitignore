@@ -8,7 +8,10 @@ web/node_modules/
 web/build
 server/build
 
+# testing
+/coverage
 
+#database
 *.sqlite
 
 server/yarn.lock
