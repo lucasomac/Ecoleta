@@ -29,23 +29,13 @@ const CreatePoint: React.FC = () => {
   const [ufs, setUfs] = useState<string[]>([]);
   const [cities, setCities] = useState<string[]>([]);
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    whatsapp: "",
-  });
+  const [formData, setFormData] = useState({ name: "", email: "", whatsapp: "", });
 
   const [selectedItems, setSelectedItems] = useState<number[]>([]);
   const [selectedUf, setSelectedUf] = useState<string>("0");
   const [selectedCity, setSelectedCity] = useState<string>("0");
-  const [selectedPosition, setSelectedPosition] = useState<[number, number]>([
-    0,
-    0,
-  ]);
-  const [initialPosition, setInitialPosition] = useState<[number, number]>([
-    0,
-    0,
-  ]);
+  const [selectedPosition, setSelectedPosition] = useState<[number, number]>([0, 0]);
+  const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
   const history = useHistory();
 
@@ -62,9 +52,7 @@ const CreatePoint: React.FC = () => {
       const response = await api.get("/items");
 
       setItems(response.data);
-    }
-
-    loadItems();
+    } loadItems();
   }, []);
 
   useEffect(() => {
@@ -111,7 +99,6 @@ const CreatePoint: React.FC = () => {
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
     const { name, value } = event.target;
-
     setFormData({ ...formData, [name]: value });
   }
 
