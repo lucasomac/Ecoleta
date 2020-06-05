@@ -12,6 +12,6 @@ app.use(cors());
 app.use(json());
 app.use(routes);
 app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
-app.listen(PORT || 3333, () => {
+app.listen(PORT, () => {
     console.log(`Server running at: http://localhost:${PORT}/`);
 });
