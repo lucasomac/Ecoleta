@@ -1,10 +1,14 @@
 # dependencies
 server/node_modules/
 web/node_modules/
+mobile/node_modules/
 *.pnp
 *.pnp.js
 
 # production
+web/build
+mobile/web-build
+mobile/web-report
 web/build
 server/build
 
@@ -28,6 +32,6 @@ yarn-error.log*
 .env.production.local
 
 
-web/.expo
+*.expo*
 *package-lock.*
 server/.env
